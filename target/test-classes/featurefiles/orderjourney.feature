@@ -10,3 +10,11 @@ Feature: Performing a search
       | brand       | Capacity   |
       | BlackBerry  | 32GB       |
     When the user clicks the product
+    And specifies contract details selecting a plan
+    When the user answers product setup questions
+      | device 1 answer | spending cap | Extra data |
+    And selects go to checkout
+    And fills in customer details
+    And fills out business details
+    And fills out credit check information
+    And fills out account details
